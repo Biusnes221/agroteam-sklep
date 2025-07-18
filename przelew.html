@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Płatność</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Płatność BLIK / przelew</h2>
+    <p><strong>Numer telefonu:</strong> <span>696746360</span></p>
+    <p><strong>Kwota:</strong> <span id="kwota">...</span> zł</p>
+    <p><strong>Tytuł przelewu:</strong> <span id="tytul">...</span></p>
+    <p>Po opłaceniu zgłoś się na Discord z potwierdzeniem.</p>
+    <a href="index.html">← Wróć do sklepu</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nick = params.get("nick");
+    const ranga = params.get("ranga");
+    const kwota = params.get("kwota");
+
+    document.getElementById("kwota").textContent = kwota;
+    document.getElementById("tytul").textContent = `Nick: ${nick}, Ranga: ${ranga}`;
+  </script>
+</body>
+</html>
