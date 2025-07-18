@@ -2,38 +2,53 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>AgroTeam Polska – Sklep</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroTeam Polska – Sklep</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>AgroTeam Polska – Sklep</h1>
-    <p>Właściciele: Kazik & Krecik</p>
-
-    <h2>Rangi do kupienia</h2>
-
-    <div class="ranga">
-        <h3>Ranga VIP</h3>
-        <p>20 zł</p>
-        <button onclick="alert('Numer BLIK: 696746360')">Kup BLIK</button>
+  <div class="container">
+    <header>
+      <h1>AgroTeam Polska – Sklep</h1>
+    </header>
+    <main class="main">
+      <section class="form-section">
+        <h2>Zakup rangi</h2>
+        <form id="purchaseForm">
+          <label for="nickname">Nick (Discord / w grze):</label>
+          <input type="text" id="nickname" name="nickname" required />
+          <button type="submit">Kup teraz</button>
+        </form>
+      </section>
+      <section class="ranks">
+        <div class="rank-card">
+          <h3>Ranga VIP</h3>
+          <p>20 zł</p>
+        </div>
+        <div class="rank-card">
+          <h3>Ranga PREMIUM</h3>
+          <p>35 zł</p>
+        </div>
+        <div class="rank-card">
+          <h3>Ranga WŁAŚCICIEL</h3>
+          <p>100 zł</p>
+        </div>
+      </section>
+    </main>
+    <div id="blikModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Płatność BLIK</h2>
+        <img src="blik.png" alt="BLIK" class="blik-logo" />
+        <p>Przekierowanie do płatności Cashbill</p>
+        <p><strong>indrop.eu</strong></p>
+        <p><strong>Wartość:</strong> <span id="selectedPrice">--</span></p>
+        <input placeholder="Kod BLIK" disabled />
+        <button class="pay-btn" disabled>Dalej</button>
+      </div>
     </div>
-
-    <div class="ranga">
-        <h3>Ranga PREMIUM</h3>
-        <p>35 zł</p>
-        <button onclick="alert('Numer BLIK: 696746360')">Kup BLIK</button>
-    </div>
-
-    <div class="ranga">
-        <h3>Ranga WŁAŚCICIEL</h3>
-        <p>100 zł</p>
-        <button onclick="alert('Numer BLIK: 696746360')">Kup BLIK</button>
-    </div>
-
-    <h2>Partnerzy serwera</h2>
-    <ul class="partnerzy">
-        <li>🚜 <a href="#" target="_blank">BongoGG</a></li>
-        <li>🚜 <a href="#" target="_blank">AgroTeam & Knut</a></li>
-    </ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
