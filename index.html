@@ -1,43 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AgroTeam Polska – Sklep</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>AgroTeam Polska – Sklep</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
     <h1>AgroTeam Polska – Sklep</h1>
-    <p>Właściciele: Kazik & Krecik</p>
-  </header>
-  <main>
+    <p class="owners">Właściciele: Kazik & Krecik</p>
+
     <h2>Rangi do kupienia</h2>
-    <div class="ranga">
-      <h3>Ranga VIP</h3>
-      <p>20 zł</p>
-      <button onclick="pokazNumer('vip')">Kup BLIK</button>
-      <div id="vip" class="blik-numer">Wyślij BLIK na numer: <strong>696746360</strong></div>
+
+    <div class="rank">
+        <h3>Ranga VIP</h3>
+        <p>20 zł</p>
+        <button onclick="showNumber()">Kup BLIK</button>
     </div>
-    <div class="ranga">
-      <h3>Ranga PREMIUM</h3>
-      <p>35 zł</p>
-      <button onclick="pokazNumer('premium')">Kup BLIK</button>
-      <div id="premium" class="blik-numer">Wyślij BLIK na numer: <strong>696746360</strong></div>
+
+    <div class="rank">
+        <h3>Ranga PREMIUM</h3>
+        <p>35 zł</p>
+        <button onclick="showNumber()">Kup BLIK</button>
     </div>
-    <div class="ranga">
-      <h3>Ranga WŁAŚCICIEL</h3>
-      <p>100 zł</p>
-      <button onclick="pokazNumer('wlasciciel')">Kup BLIK</button>
-      <div id="wlasciciel" class="blik-numer">Wyślij BLIK na numer: <strong>696746360</strong></div>
+
+    <div class="rank">
+        <h3>Ranga WŁAŚCICIEL</h3>
+        <p>100 zł</p>
+        <button onclick="showNumber()">Kup BLIK</button>
     </div>
-  </main>
-  <script>
-    function pokazNumer(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === 'block' ? 'none' : 'block';
-    }
-  </script>
+
+    <div id="blik-number"></div>
+
+    <div class="sidebar">
+      <h2>Partnerzy serwera</h2>
+      <ul>
+        <li><a href="https://bongogg.pl" target="_blank">🎮 BongoGG</a></li>
+        <li><a href="https://agroteam.pl" target="_blank">🚜 AgroTeam & Knut</a></li>
+      </ul>
+    </div>
+
+    <script>
+        function showNumber() {
+            document.getElementById('blik-number').innerText = "Numer BLIK: 696746360";
+        }
+    </script>
 </body>
 </html>

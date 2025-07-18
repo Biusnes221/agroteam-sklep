@@ -1,36 +1,83 @@
-
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111 url("background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-  text-align: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-header {
-  padding: 20px;
-  background: rgba(0,0,0,0.7);
+
+h1 {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin: 0;
 }
-main {
-  padding: 40px 20px;
+
+.owners {
+    margin-bottom: 30px;
 }
-.ranga {
-  background: rgba(0,0,0,0.6);
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
+
+.rank {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px auto;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
 }
+
+.rank h3 {
+    margin-top: 0;
+}
+
 button {
-  background: lime;
-  color: black;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-top: 10px;
+    background-color: lime;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
 }
-.blik-numer {
-  margin-top: 10px;
-  display: none;
+
+#blik-number {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar {
+  position: fixed;
+  top: 150px;
+  right: 30px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
 }
