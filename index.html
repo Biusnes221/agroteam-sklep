@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -7,42 +8,32 @@
 </head>
 <body>
     <h1>AgroTeam Polska – Sklep</h1>
-    <p class="owners">Właściciele: Kazik & Krecik</p>
+    <p>Właściciele: Kazik & Krecik</p>
 
     <h2>Rangi do kupienia</h2>
 
-    <div class="rank">
+    <div class="ranga">
         <h3>Ranga VIP</h3>
         <p>20 zł</p>
-        <button onclick="showNumber()">Kup BLIK</button>
+        <button onclick="alert('Numer BLIK: 696746360')">Kup BLIK</button>
     </div>
 
-    <div class="rank">
+    <div class="ranga">
         <h3>Ranga PREMIUM</h3>
         <p>35 zł</p>
-        <button onclick="showNumber()">Kup BLIK</button>
+        <button onclick="alert('Numer BLIK: 696746360')">Kup BLIK</button>
     </div>
 
-    <div class="rank">
+    <div class="ranga">
         <h3>Ranga WŁAŚCICIEL</h3>
         <p>100 zł</p>
-        <button onclick="showNumber()">Kup BLIK</button>
+        <button onclick="alert('Numer BLIK: 696746360')">Kup BLIK</button>
     </div>
 
-    <div id="blik-number"></div>
-
-    <div class="sidebar">
-      <h2>Partnerzy serwera</h2>
-      <ul>
-        <li><a href="https://bongogg.pl" target="_blank">🎮 BongoGG</a></li>
-        <li><a href="https://agroteam.pl" target="_blank">🚜 AgroTeam & Knut</a></li>
-      </ul>
-    </div>
-
-    <script>
-        function showNumber() {
-            document.getElementById('blik-number').innerText = "Numer BLIK: 696746360";
-        }
-    </script>
+    <h2>Partnerzy serwera</h2>
+    <ul class="partnerzy">
+        <li>🚜 <a href="#" target="_blank">BongoGG</a></li>
+        <li>🚜 <a href="#" target="_blank">AgroTeam & Knut</a></li>
+    </ul>
 </body>
 </html>

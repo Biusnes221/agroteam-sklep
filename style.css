@@ -1,83 +1,38 @@
+
 body {
-    background: url('background.jpg') no-repeat center center fixed;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-h1 {
+h1, h2 {
+    color: white;
+}
+
+.ranga {
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.85);
-    margin: 0;
-}
-
-.owners {
-    margin-bottom: 30px;
-}
-
-.rank {
-    background-color: rgba(0, 0, 0, 0.7);
     margin: 20px auto;
-    padding: 20px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px;
 }
 
-.rank h3 {
-    margin-top: 0;
-}
-
 button {
-    background-color: lime;
-    color: black;
     padding: 10px 20px;
+    background-color: lime;
     border: none;
     cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
 }
 
-#blik-number {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+.partnerzy {
+    list-style-type: none;
+    padding: 0;
 }
 
-.sidebar {
-  position: fixed;
-  top: 150px;
-  right: 30px;
-  width: 200px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 12px;
-  color: white;
-  font-family: sans-serif;
-}
-
-.sidebar h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 10px;
-}
-
-.sidebar ul li a {
-  color: #00ff00;
-  text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-  text-decoration: underline;
+.partnerzy li {
+    margin: 10px 0;
 }
